@@ -45,6 +45,7 @@ private Button btn;
             @Override
             public void onClick(View v) {
                 createNotification();
+                createNotification2();
 
             }
         });
@@ -124,6 +125,17 @@ private Button btn;
         NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(this);
         nBuilder.setContentTitle("UnderBasement");
         nBuilder.setContentText("Hi Lavet,there are 3 parking slots available");
+        nBuilder.setSmallIcon(R.drawable.ic_stat_name);
+        Notification notification= nBuilder.build();
+        NotificationManager nm=(NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        nm.notify(1,notification);
+
+
+    }
+    public void createNotification2(){
+        NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(this);
+        nBuilder.setContentTitle("RoofTop");
+        nBuilder.setContentText("Hi Lavet,there are 10 parking slots available");
         nBuilder.setSmallIcon(R.drawable.ic_stat_name);
         Notification notification= nBuilder.build();
         NotificationManager nm=(NotificationManager) getSystemService(NOTIFICATION_SERVICE);

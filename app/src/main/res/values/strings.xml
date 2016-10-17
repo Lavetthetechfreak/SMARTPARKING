@@ -6,5 +6,7 @@
         <string name="btn_get_location">GET MY LOCATION</string>
         <string name="btn_start_location_updates">START LOCATION UPDATES</string>
         <string name="btn_stop_location_updates">STOP LOCATION UPDATES</string>
+    <string name="minimum_password">your password is too short</string>
+    <string name="auth_failed">authentication failed</string>
 
-    </resources>
+</resources>

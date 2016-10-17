@@ -7,10 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.student.smartparking.MainActivity">
+    tools:context="com.example.student.smartparking.MainActivity"
+    android:background="#e35309">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="1000dp"
+        android:layout_height="1000dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/smartparking" />
 </RelativeLayout>
