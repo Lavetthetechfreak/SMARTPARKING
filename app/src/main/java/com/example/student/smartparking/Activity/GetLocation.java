@@ -16,6 +16,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -33,6 +34,8 @@ public class GetLocation extends AppCompatActivity {
     private LocationListener locationListener;
 private Button btn;
 
+    int flag=1;
+
     @TargetApi(Build.VERSION_CODES.M)
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,9 +47,7 @@ private Button btn;
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                createNotification();
-                createNotification2();
-
+              createNotification();
             }
         });
 
@@ -115,7 +116,7 @@ private Button btn;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                locationManager.requestLocationUpdates("gps", 20000, 0, locationListener);
+                locationManager.requestLocationUpdates("gps",20000000, 0, locationListener);
 
             }
         });

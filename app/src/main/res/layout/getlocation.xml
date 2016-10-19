@@ -32,7 +32,7 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="@string/btn_get_location"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:layout_gravity="center_horizontal" />
     <Button
         android:id="@+id/btnnotification"
@@ -42,9 +42,10 @@
         android:background="#e35309"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="get parking slot"
-        android:textColor="#000"
-        android:layout_gravity="center_horizontal" />
+        android:text="get parking space"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        />
 
 
 </LinearLayout>
